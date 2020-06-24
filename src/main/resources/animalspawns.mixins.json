@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "mod.linguardium.animalspawns.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AnimalEntityMixin",
+    "BooleanGameRuleAccessor",
+    "ChickenMixin",
+    "IntegerGameRuleAccessor",
+    "MobEntityMixin",
+    "PassiveEntitySpawnReasonTracking",
+    "RegisterGameRule",
+    "ServerChunkManagerMixin",
+    "SpawnHelperInfoMixin",
+    "SpawnHelperMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

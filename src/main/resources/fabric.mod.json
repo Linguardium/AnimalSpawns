@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "animalspawns",
+  "version": "${version}",
+  "name": "AnimalSpawns",
+  "description": "increase spawn rate for passive entities",
+  "authors": [
+    "Linguardium"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/animalspawns/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.linguardium.animalspawns.AnimalSpawnsMain"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "animalspawns.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.8"
+  }
+}
