@@ -18,7 +18,10 @@ public abstract class ServerChunkManagerMixin {
 
     @ModifyConstant(method="tickChunks",constant=@Constant(longValue=400L))
     private long AnimalSpawnTimeDelayModifier(long originalDelay) {
-        return getWorld().getGameRules().getInt(NewGameRules.ANIMAL_TIME_INTERVAL_KEY);
+        long interval = getWorld().getGameRules().getInt(NewGameRules.ANIMAL_TIME_INTERVAL_KEY);
+        if (interval < 1)
+            interval = 1;
+        return interval;
     }
 
 }
