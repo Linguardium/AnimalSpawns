@@ -1,0 +1,7 @@
+{
+    "gamerule.animalspawns_animalMobCap":"Animal Mob Cap",
+    "gamerule.animalspawns_animalMinDespawnDistance":"Soft Animal Despawn Range",
+    "gamerule.animalspawns_animalMaxDespawnDistance":"Hard Animal Despawn Range",
+    "gamerule.animalspawns_animalDelaySpawn":"Ticks between Animal spawn attempts",
+    "gamerule.animalspawns_feedingPersists":"Feeding Animals makes them persistent"
+}

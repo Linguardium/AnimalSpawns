@@ -23,6 +23,7 @@
     "animalspawns.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.8.8"
+    "fabricloader": ">=0.8.8",
+    "fabric": ">=0.14.1"
   }
 }

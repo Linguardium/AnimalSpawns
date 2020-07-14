@@ -1,24 +1,15 @@
 package mod.linguardium.animalspawns.mixin;
 
-import jdk.internal.jline.internal.Nullable;
-import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.mob.MobEntityWithAi;
+import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PassiveEntity.class)
-public class PassiveEntitySpawnReasonTracking extends MobEntityWithAi {
-    protected PassiveEntitySpawnReasonTracking(EntityType<? extends MobEntityWithAi> entityType, World world) {
+public class PassiveEntitySpawnReasonTracking extends PathAwareEntity {
+    protected PassiveEntitySpawnReasonTracking(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
     }
 

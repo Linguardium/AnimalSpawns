@@ -6,6 +6,7 @@
     "AnimalEntityMixin",
     "BooleanGameRuleAccessor",
     "ChickenMixin",
+    "EntityTypeMixin",
     "IntegerGameRuleAccessor",
     "MobEntityMixin",
     "PassiveEntitySpawnReasonTracking",

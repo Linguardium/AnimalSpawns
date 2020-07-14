@@ -15,7 +15,7 @@ public class AnimalSpawnsMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        log(Level.INFO, "Initializing");
+        log(Level.INFO, "Animal Spawns Loaded");
         //TODO: Initializer
     }
 
